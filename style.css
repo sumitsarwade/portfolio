@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f1117;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.hero-left {
+    max-width: 500px;
+}
+
+.tagline {
+    color: #5cff5c;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+.hero h1 span {
+    color: #5cff5c;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #ccc;
+    margin: 20px 0;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    margin-right: 15px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: #5cff5c;
+    color: #000;
+}
+
+.btn.secondary {
+    border: 2px solid #5cff5c;
+    color: #5cff5c;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-right {
+    position: relative;
+}
+
+.hero-right img {
+    width: 350px;
+    z-index: 2;
+    position: relative;
+    border-radius: 10px;
+}
+
+.circle-bg {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background: #1b1f2a;
+    border-radius: 50%;
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+    z-index: 1;
+}

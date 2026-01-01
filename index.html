@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automation Engineer | Portfolio</title>
+  <meta name="description" content="Senior Automation Engineer specializing in Cypress, API Testing, and CI/CD.">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #0ea5e9;
+      --bg: #f8fafc;
+      --text: #1e293b;
+      --muted: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10%;
+      background: linear-gradient(120deg, #0f172a, #1e293b);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      opacity: 0.9;
+    }
+
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--secondary);
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      background: #0284c7;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: var(--secondary);
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    footer {
+      background: #020617;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 30px;
+      margin-top: 80px;
+    }
+
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Senior Automation Engineer</h1>
+  <p>
+    Building scalable test automation frameworks for enterprise-grade applications.
+    Expert in Cypress, API automation, CI/CD, and modern QA engineering.
+  </p>
+
+  <div class="cta">
+    <a href="#projects">View Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I design and build robust automation solutions that ensure quality at scale.
+    My focus is on API-first testing, automation architecture, and integrating
+    testing seamlessly into CI/CD pipelines.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical Expertise</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Automation</h3>
+      <p>Cypress, Playwright, Selenium, Test Strategy Design</p>
+    </div>
+    <div class="card">
+      <h3>API Testing</h3>
+      <p>REST, Postman, OAuth, JWT, Schema Validation</p>
+    </div>
+    <div class="card">
+      <h3>CI/CD</h3>
+      <p>GitHub Actions, Azure DevOps, Jenkins</p>
+    </div>
+    <div class="card">
+      <h3>Languages</h3>
+      <p>JavaScript, TypeScript, Java</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Enterprise E-Commerce Automation</h3>
+      <p>End-to-end Cypress automation covering UI, API, and regression flows with CI execution.</p>
+    </div>
+    <div class="card">
+      <h3>API Automation Framework</h3>
+      <p>Reusable API test framework with schema validation and token management.</p>
+    </div>
+    <div class="card">
+      <h3>CI/CD Quality Gate</h3>
+      <p>Automated test execution on every pull request with reporting and alerts.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <p>© 2026 | Automation Engineer Portfolio</p>
+  <p>LinkedIn · GitHub · Email</p>
+</footer>
+
+<script>
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href"))
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  });
+</script>
+
+</body>
+</html>
